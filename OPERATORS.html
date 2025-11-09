@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>OPERATOES</title>
+</head>
+<body>
+<h1>OPERATOES</h1>
+<h3>
+
+
+
+<li><details>
+<summary>write a program to show that example of pre-increment? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int a=5;
+int b;
+b=++a;
+printf("value of a = %d\n",a);
+printf("value of b = %d\n",b);
+}
+
+
+</pre>
+</details></li>
+
+
+
+
+
+
+<li><details>
+<summary>Write a program to show the example of post-increment </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+void main()
+{
+int a = 5;
+int b;
+printf("before increment: a = %d\n");
+b = a++;
+printf("after post increment:\n");
+printf("value of a = %d\n",a);
+printf("value of b = %d\n",b);
+}
+
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+<li><details>
+<summary>write a program to show that example of pre- decrement? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int a = 5;
+int b;
+printf("before decrement: a =%d\n",a);
+b = --a;
+printf("after pre decrement:\n");
+printf("value of a = %d\n",a);
+printf("value of b = %d\n",b);
+}
+
+
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary>write a program to shows that example of post-decrement? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+void main()
+{
+int a = 5;
+int b;
+printf("before decrement: a = %d\n",a);
+b = a--;
+printf("after post decrement:\n");
+printf("value of a = %d\n",a);
+printf("value of b = %d\n",b);
+}
+</pre>
+</details></li>
+
+
+
+
+<li><details>
+<summary>write a program to enter 2 numbers from user add the number and show the answer,again take 2 number from the user subtract the number display the number again take 2 number from the user multiply the number display the answer and again take 2 number from the user divide the number display the answer again take 2 number.....................? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+void main()
+{
+int a,b;
+clrscr();
+printf("enter two numbers");
+scanf("%d %d",&a ,&b);
+printf("addition of %d\n",a+b);
+int c,d;
+printf("enter two number");
+scanf("%d%d",&c,&d);
+printf("subtraction of %d\n",c-d);
+int e,f;
+printf("enter two numbers");
+scanf("%d%d",&e,&f);
+printf("multiplication of %d\n",e*f);
+float g,h;
+printf("enter two number");
+scanf("%f%f",&g,&h);
+printf("division of %2f\n",g/h);
+int i,j;
+printf("enter two number");
+scanf("%d%d",&i,&j);
+printf("subraction of %d\n",i-j);
+int k;
+printf("enter a number ");
+scanf("%d",&k);
+if(k>0)
+{
+printf("negative no. of%d",k*-1);
+}
+else
+printf("square of %d",k*k);
+float l,m;
+printf("enter two number");
+scanf("%f%f",&l,&m);
+printf("division of %f\n",l/m);
+int n,o;
+printf("enter two number ");
+scanf("%d%d",&n,&o);
+if(n>0)
+printf("greater of %d",n);
+else
+{
+printf("greater of %d",o);
+}
+int p,q;
+printf("enter a number");
+scanf("%d",&p);
+q=p%10;
+printf("last digit of %d",q);
+int x,y,z;
+printf("enter three number");
+scanf("%d%d%d",&x,&y,&z);
+if(x>y&& x>z)
+printf("%d is greater",x);
+if(y>x && y>z)
+printf("%d is greater",y);
+else if(z>x&& z>y)
+printf("%d is greater",z);
+getch();
+}
+
+
+</pre>
+</details></li>
+
+
+<li><details>
+<summary>write a program to enter a number from the user ,the length of the number is depend on the user,programmer should print the last digit of number? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+long long num;
+int lastdigit;
+clrscr();
+printf("enter a number:");
+scanf("%lld",&num);
+lastdigit = num %10;
+printf("the last digitr of the number is :%d/n",lastdigit);
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>enter a decimal number from the user and print the right hand side of the decimal point? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float num;
+int integer;
+float decimal;
+clrscr();
+printf("enter a decimal number:");
+scanf("%f",&num);
+integer = (int)num;
+decimal = num - integer;
+if(decimal<0)
+decimal = -decimal;
+printf("right-hand side of decimal point:%4f\n",decimal);
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>enter a number and find out the cube of the number </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int num, cube;
+clrscr();
+printf("enter a number");
+scanf("%d",&num);
+cube=num*num*num;
+printf("cube of %d is: %d",num,cube);
+getch();
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>enter float number from the user and round of the number? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float num;
+int rounded;
+printf("enter a float number:");
+scanf("%f",&num);
+if (num>=0)
+rounded = (int)(num + 0.5);
+else
+rounded = (int)(num - 0.5);
+printf("rounded value of%2f is:%d\n",num,rounded);
+}
+
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>enter a lower case character from the user and print it into upper case? </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+void main()
+{
+char ch;
+printf("enter a lowercase character:");
+scanf("%c",&ch);
+if(ch>= 'a' && ch<= 'z')
+{
+ch = ch - 32;
+printf("uppercase character is: %c\n",ch);
+}
+else
+{
+printf("please enter a lowercase letter only!\n");
+}
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>enter marks of students and calculate average of students marks? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float m1,m2,m3,average;
+clrscr();
+printf("enter marks of 3 students:");
+scanf("%f%f%f",&m1,&m2,&m3);
+average = (m1+m2+m3) /3;
+printf("averageb marks of 3 students is %2f\n",average);
+
+getch();
+
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>calculate simple interest=(p*r*T)/100 </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float p,r,t,si;
+clrscr();
+printf("enter principal amount:")
+scanf("%f",&p);
+printf("enter rate of interest:");
+scanf("%f",&r);
+printf("enter time in years:");
+scanf("%f",&t);
+printf("simple interest of %2f\n",si);
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+</h3>
+</body>
+</html>

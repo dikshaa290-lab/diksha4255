@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>SINGLE_DIMENSION_ARRAYS</title>
+</head>
+<body>
+<h1>SINGLE_DIMENSION_ARRAYS</h1>
+<h3>
+
+
+
+<li><details>
+<summary>basic array input  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[10], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Array elements are:\n");
+    for(i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+
+<li><details>
+<summary>print reverse of an array </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+
+void main() {
+    int arr[10], n, i,j;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Array elements are:\n");
+    for(i = n-1; i >= 0; i--)
+        printf("%d ", arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+<li><details>
+<summary>copy array to another array  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr1[100], arr2[100], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr1[i]);
+
+    for(i = 0; i < n; i++)
+        arr2[i] = arr1[i];
+
+    printf("Copied array:\n");
+    for(i = 0; i < n; i++)
+        printf("%d ", arr2[i]);
+}
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary>copy of reversed array </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+void main() {
+    int arr1[100], arr2[100], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr1[i]);
+        
+    for(i = 0; i < n; i++)
+        arr2[i] = arr1[i] ;
+        
+    printf("Reversed copied array:\n");
+    for(i = n-1; i >= 0; i--)
+        printf("%d ", arr2[i]);
+}
+</pre>
+</details></li>
+
+
+
+
+<li><details>
+<summary>printing only even numbers </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+
+void main() {
+    int arr[100], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Even numbers are:\n");
+    for(i = 0; i < n; i++)
+        if(arr[i] % 2 == 0)
+            printf("%d ", arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>printing only positive numbers </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[100], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Positive numbers are:\n");
+    for(i = 0; i < n; i++)
+        if(arr[i] > 0)
+            printf("%d ", arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>square of every elements  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[100], n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Squares of elements:\n");
+    for(i = 0; i < n; i++)
+        printf("%d ", arr[i] * arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>printing only odd numbers in an array </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[5], i;
+    printf("Enter 5 elements:\n");
+    for(i = 0; i < 5; i++)
+        scanf("%d", &arr[i]);
+
+    printf("Odd numbers are:\n");
+    for(i = 0; i < 5; i++)
+        if(arr[i] % 2 != 0)
+            printf("%d ", arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>sum of an array </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[5], i, sum = 0;
+    printf("Enter 5 elements:\n");
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+        sum = sum + arr[i];
+    }
+    printf("Sum of all elements = %d", sum);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>number finding in an array </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+void main()
+{
+    int arr[5], i, num, found = 0;
+
+    clrscr();  
+
+    printf("Enter 5 elements of array:\n");
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter a number to search: ");
+    scanf("%d", &num);
+
+    for(i = 0; i < 5; i++)
+    {
+        if(arr[i] == num)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    if(found == 1)
+        printf("Found");
+    else
+        printf("Not found");
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>printing array in ascending order  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[5], i, j, temp;
+    printf("Enter 5 elements:\n");
+    for(i = 0; i < 5; i++)
+        scanf("%d", &arr[i]);
+
+    for(i = 0; i < 5; i++) {
+        for(j = i + 1; j < 5; j++) {
+            if(arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    printf("Array in ascending order:\n");
+    for(i = 0; i < 5; i++)
+        printf("%d ", arr[i]);
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>printing maximum value of the array  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[100], n, i, max;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    max = arr[0];
+    for(i = 1; i < n; i++)
+        if(arr[i] > max)
+            max = arr[i];
+
+    printf("Maximum value = %d", max);
+}
+</pre>
+</details></li>
+
+
+
+
+<li><details>
+<summary>printing minimum value of the array  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main() {
+    int arr[100], n, i, min;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    min = arr[0];
+    for(i = 1; i < n; i++)
+        if(arr[i] < min)
+            min = arr[i];
+
+    printf("Minimum value = %d", min);
+}
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+</h3>
+</body>
+</html>

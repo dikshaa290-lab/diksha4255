@@ -1,0 +1,24 @@
+.head{
+       background-color: grey;
+       padding: 10px;
+       color: black;
+       font-size:smaller;
+}
+
+a{
+    font-size: smaller;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18%;
+    font-size: smaller;
+    background-color: grey;
+    color: black;
+
+
+}
+main{
+    margin-top: 100px;
+}

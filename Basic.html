@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>BASIC_INPUT_OUTPUT</title>
+</head>
+<body>
+<h1>BASIC_INPUT_OUTPUT</h1>
+<h3>
+
+<li><details>
+<summary>Write a program to print the message:Today I made my first C program.</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+
+void main()
+{
+printf("today I made my first C program");
+}
+output:
+today I made my first C program
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>Write a program to read a character from the keyboard and display it on the screen.</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+clrscr();
+char ch;
+printf("please enter a character:");
+scanf("%c",&ch);
+printf("you entered:%c\n,ch");
+}
+
+output:
+Please enter a character: A
+You entered: A
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+
+<li><details>
+<summary>Write a program to read only 4 characters from the keyboard and display it on the screen in a separate line.</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+char ch1,ch2,ch3,ch4;
+printf("enter four character:");
+ch1=getchar();
+ch2=getchar();
+ch3=getchar();
+ch4=getchar();
+printf("%c%c%c%c\n",ch1,ch2,ch3,ch4);
+return 0;
+}
+output:
+Enter four characters: abcd
+abcd
+</pre>
+</details></li>
+
+
+<li><details>
+  <summary>Write a program to print your name at center of the first line?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+clrscr();
+printf("                                     Diksha\n");
+return 0;
+}
+output:
+                      Diksha
+</pre>
+</details></li>
+
+<li><details>
+ 
+<summary> Write a program to store single quote and print that variable to show single quote on output screen.</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+char ch='\'';
+printf("single quote:%c\n",ch);
+return 0;
+}
+output:
+single quote:'
+</pre>
+</details></li>
+
+
+
+<li><details>
+ <summary>Write a program for printing your name on output screen but your name should blink 5 times</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+for(i=0;i<5;i++)
+{
+clrscr();
+printf("MY Name: Diksha\n");
+delay(500);
+clrscr();
+delay(500);
+}
+printf("My Name: Diksha\n");
+getch();
+return 0;
+}
+output:
+My Name: Diksha
+</pre>
+</details></li>
+
+
+
+<li><details>
+
+ <summary>Write a program to print your name at center of the first line ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+clrscr();
+printf("                                     Diksha\n");
+return 0;
+}
+output:
+                      Diksha
+</pre>
+</details></li>
+
+
+<li><details>
+
+<summary> Write the program to display this output ? #include<stdio.h> #include<conio.h> #include<dos.h> void main () { clrscr(); printf(“hello,welcome to c”); delay(5000); }</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+clrscr();
+printf("hello,welcome to c");
+delay(5000);
+}
+output:
+hello,wlecome to c
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary> Write a program to print your name at the center of the page ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+clrscr();
+printf("\n\n\n\n\n\n\n\n\\n\n\n\n");
+printf("                                    Diksha\n");
+}
+output:
+Diksha
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+ <summary>Write a program to store single quote and print that variable to show single quote on output screen ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+char ch='\'';
+printf("single quote:%c\n",ch);
+return 0;
+}
+output:
+single quote:'
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary> Write a program for printing your name on output screen but your name should blink 5 time ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+int i;
+for(i=0;i<5;i++)
+{
+clrscr();
+printf("MY Name: Diksha\n");
+delay(500);
+clrscr();
+delay(500);
+}
+printf("My Name: Diksha\n");
+getch();
+return 0;
+}
+output:
+My Name: Diksha
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+<li><details>
+<summary> Enter password display like ****** ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+char password[20];
+int i=0;
+char ch;
+printf("enter password: ");
+while(1)
+{
+ch=getch();
+if(ch==13)
+{
+break;
+}
+else if(ch==8)
+{
+if(i>0)
+{
+i--;
+printf("\b \b");
+}
+}
+else
+{
+if(i<19)
+{
+password[i]=ch;i++;
+printf("*");
+}
+}
+}
+password[i]='\0';
+printf("\npassword accepted.\n");
+return 0;
+}
+output:
+enter password: ********
+password accepted.
+</pre>
+</details></li>
+
+
+
+
+
+
+
+<li><details>
+ <summary>Enter two character from user and print ASCII value ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+char ch1,ch2;
+printf("enter first character:");
+ch1=getchar();
+printf("enter second character:");
+ch2=getchar();
+printf("ASCII value of %c is: %d\n",ch1,ch1);
+printf("ASCII value of %C is: %d\n",ch2,ch2);
+return 0;
+}
+output:
+enter first character:A
+enter second character:ASCII value of A is: 65
+ASCII value of 
+ is: 10
+</pre>
+</details></li>
+
+
+
+
+
+
+<li><details>
+ <summary>Print all ASCII character 0 to 127 ?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+printf("ASCII characters from 0 to 127:\n\n");
+for(i=0;i<=127;i++)
+{
+printf("character for ASCII %d is: ",i);
+if(i>=32&& i<=126)
+{
+printf("%c\n", i);
+}
+else
+{
+printf("Non-printable\n");
+}
+}
+return 0;
+}
+output:
+ASCII characters from 0 to 127:
+
+0-31    : Non-printable
+32-126  : Printable characters
+127     : Non-printable
+</pre>
+</details></li>
+
+
+
+
+
+
+</h3>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<html>
+<head>
+<title>ITERATIVE_CONTROL_STRUCTURE(LOOPS)</title>
+</head>
+<body>
+<h1>ITERATIVE_CONTROL_STRUCTURE(LOOPS)</h1>
+<h3>
+
+<li><details>
+<summary>Enter a number from the user and find out the binary of that number</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#inlude&lt;dos.h&gt;
+
+int main()
+{
+int num, i;
+printf("Enter number: ");
+scanf("%d", &num);
+printf("Binary form: ");
+for(i=7;i>=0;i--)
+{
+printf("%d",(num>>i) &1);
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+<summary>Enter a number from the user and check that the number is divisible by
+any prime number or not? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int num, i, flag=0;
+printf("Enter number: ");
+scanf("%d", &num);
+for(i=2; i<=num/2;i++)
+{
+if(num%i==0)
+{
+printf("%d divide by prime number.\n",num);
+flag=1;
+break;
+}
+}
+if(flag==0)
+printf("%d not divide by prime number.\n",num);
+return 0;
+}
+
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+
+<li><details>
+<summary> Enter a number from the user and check it is a prime number or not?</summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int num, i, isPrime=1;
+printf("Enter a number: ");
+scanf("%d", &num);
+if(num<=1)
+{
+printf("%d is not a prime number.\n",num);
+return 0;
+}
+for(i=2;i*i<=num;i++)
+{
+if(num%i==0)
+{
+isPrime=0;
+break;
+}
+}
+if(isPrime)
+printf("%d is a prime number.\n", num);
+else
+printf("%d is not a prime number.\n", num);
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+<li><details>
+  <summary>Enter a number from the user and print all digit of the number
+in separate line? </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+int num, temp;
+printf("Enter a number: ");
+scanf("%d", &num);
+if(num<0)
+{
+num=-num;
+}
+while(num>0)
+{
+temp=num%10;
+printf("%d\n", temp);
+num=num/10;
+}
+return 0;
+}
+</pre>
+</details></li>
+
+
+
+
+
+
+<li><details>
+ 
+<summary>Write a program to print your name 1 lakh times? .</summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+for(i=1;i<=100000;i++)
+{
+printf("Diksha\n");
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+ <summary>Write a program to print a series 1to1 lakh? </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+for(i=1;i<=100000;i++)
+{
+printf("%d\n",i);
+}
+return 0;
+}
+</pre>
+</details></li>
+
+
+
+<li><details>
+
+ <summary>Enter a number from the user and print the series from 1 to that number? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int n, i;
+printf("Enter a number: ");
+scanf("%d", &n);
+for(i=1; i<=n;i++)
+{
+printf("%d\n",i);
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+
+<summary>Enter a number from the user and print that number 100 time?  </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int n, i;
+printf("Enter a number: ");
+scanf("%d", &n);
+for(i=1;i<=100;i++)
+{
+printf("%d\n", n);
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary> Write a program print all the odd number between 1 to 100 ? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+for(i=1;i<=100;i+=2)
+{
+printf("%d\n", i);
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+<li><details>
+ <summary> Write a program print the table of 4 in the format given as
+below (till 20)? 4*1=4 and so on </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int i;
+for(i=1;i<=20;i++)
+{
+printf("4*%d=%d\n",i,4*i);
+}
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary> Enter the number from user and reverse the number? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int num,rev=0, rem;
+printf("Enter a number:");
+scanf("%d", &num);
+while(num!=0)
+{
+rem=num%10;
+rev=rev*10+rem;
+num=num/10;
+}
+printf("Reversed number: %d\n", rev);
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+<li><details>
+<summary> Enter the numberfrom user and check its palindrome or not? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int num, temp, rev=0, rem;
+printf("Enter number: ");
+scanf("%d", &num);
+temp = num;
+while(temp!=0)
+{
+rem=temp%10;
+rev=rev*10+rem;
+temp=temp/10;
+}
+if(num==rev)
+printf("This is palindrome.\n");
+else
+printf("This is not palindrome.\n");
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+<li><details>
+ <summary>Enter two numbers from users, one is base and second is power. Write
+the result? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+int base, power, result=1,i;
+printf("Enter the base number: ");
+scanf("%d", &base);
+printf("Enter the power number: ");
+scanf("%d", &power);
+for(i=1;i<=power;i++)
+{
+result+result*base;
+}
+printf("Result: %d\n",result);
+return 0;
+}
+</pre>
+</details></li>
+
+
+
+
+
+
+<li><details>
+ <summary> Enter a number from user and print total from 0 to that number? </summary>
+<pre>
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int main()
+{
+int num, first_digit;
+printf("Enter number: ");
+scanf("%d", &num );
+while(num>=10)
+{
+num=num/10;
+}
+first_digit=num;
+printf("First digit: %d\n",first_digit);
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+<li><details>
+<summary>Enter a number from user and print total from 0 to that number ?  </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+int n, sum=0,i;
+printf("enter a number: ");
+scanf("%d", &n);
+for(i=0; i <= n; i++)
+{
+sum=sum+i;
+}
+printf("total: %d\n", sum);
+return 0;
+
+}
+
+
+
+</pre>
+</details></li>
+
+
+
+
+
+
+
+
+
+<li><details>
+<summary>Enter a number from user and find out factorial of that number? </summary>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+int main()
+{
+int n, i;
+unsigned long long factorial=1;
+printf("Enter a number: ");
+scanf("%d", &n);
+for(i=1;i<=n;i++)
+{
+factorial=factorial*i;
+}
+printf("Factorial of %dis %llu\n", n, factorial);
+return 0;
+}
+
+</pre>
+</details></li>
+
+
+
+
+
+</h3>
+</body>
+</html>
